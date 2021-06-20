@@ -116,6 +116,23 @@
 				<div class="text-center">
 					<a href="https://download938.mediafire.com/x8ixgd14wnog/a9je0elt4596ubu/Worksheets.zip" class="btn btn-lg wire-btn-pale-chestnut btn-wire" target="_blank">Download</a>
 				</div>
+				<div class="form-group">
+					<h3 class="mg-md">
+						What are you suffering from?
+					</h3>
+					<div class="form-group">
+						<input name="disease" id="disease" type="text" class="form-control" />
+						<h3 class="mg-md">
+							Enter your city name :
+						</h3>
+						<div class="form-group">
+							<input name="city" id="city" type="text" class="form-control" />
+							<div class="text-center">
+								<a onclick="searchresult()" class="btn btn-lg wire-btn-pale-chestnut btn-wire">Search for help</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -157,6 +174,14 @@
 
 
 <!-- Additional JS -->
+	<script type="text/javascript">
+  function searchresult(){
+    var d = document.getElementById('disease').value;
+    var c = document.getElementById('city').value;
+
+    window.location = "http://www.google.com/search?q=" +"therapist+for+"+d+"+in+"+c;
+  }
+</script>
 <script src="./js/jquery.min.js?6945"></script>
 <script src="./js/bootstrap.bundle.min.js?3116"></script>
 <script src="./js/blocs.min.js?2161"></script>
